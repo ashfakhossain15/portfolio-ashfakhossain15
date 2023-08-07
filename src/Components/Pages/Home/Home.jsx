@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "./../../Shared/Header/Header";
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 const Home = () => {
   return (
     <div>
@@ -11,30 +12,46 @@ const Home = () => {
               Hi I'm <span className="text-[#00abf0]">Ashfak Hossain</span>
             </h1>
             <div className="text-animate">
-              <h2>FontEnd Developer</h2>
+              <h1>FontEnd Developer</h1>
             </div>{" "}
-            <p className="py-6 mr-5">
+            <p className="py-6 content-bio mr-5">
               I am a skilled and passionate Front-End Developer, harnessing the
               power of code and design to create captivating user experiences.
               With a keen eye for aesthetics and functionality, I bring websites
-              to life, seamlessly blending creativity and technology. I am adept
-              at converting design concepts into pixel-perfect realities,
-              optimizing site performance, and ensuring cross-browser
-              compatibility. Constantly seeking growth, I stay updated on the
-              latest industry trends and best practices. As a detail-oriented
-              problem solver, I relish challenges and take pride in delivering
-              clean, intuitive, and accessible web solutions that make a lasting
-              impact.
+              to life, seamlessly blending creativity and technology. Constantly
+              seeking growth, I stay updated on the latest industry trends and
+              best practices.
             </p>
-            <div className="flex gap-x-8 mt-5">
-              <button className="text-white bg-[#00abf0] px-5 py-3  rounded-md">
+            <div className="btn-box  mt-5">
+              <button className="button-box text-white bg-[#00abf0] px-7 py-3  rounded-md">
                 <Link>Hire me</Link>
               </button>
-              <button className="text-white bg-[#00abf0] px-5 py-3 rounded-md">
+              <button className="button-box text-white bg-[#00abf0] px-7 py-3 ">
                 <Link>Lets Talk</Link>
               </button>
             </div>
           </div>
+          <div className="home-sci">
+            <Link
+              to={"https://web.facebook.com/ashfakhossain175"}
+              className="link-icon"
+            >
+              <FaFacebookF />
+            </Link>{" "}
+            <Link
+              to={"https://github.com/ashfakhossain15"}
+              className="link-icon"
+            >
+              <FaGithub />
+            </Link>{" "}
+            <Link
+              className="link-icon"
+              to={"https://www.linkedin.com/in/ashfakhossain15/"}
+            >
+              <FaLinkedinIn />
+            </Link>
+          </div>
+          <div className="home-img"></div>
         </div>
       </section>
     </div>

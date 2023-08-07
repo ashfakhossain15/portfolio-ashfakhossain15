@@ -52,8 +52,24 @@ nav a:hover {
   }
 }
 .home {
-  display: grid;
-  grid-template-columns: 1fr, 2;
+  display: flex;
+  align-items: center;
+  background: url("/public/IMG_E2003_1__1__1__1_-removebg.png") no-repeat;
+  background-size: 63rem;
+  background-position: right;
+  padding: 0 3%;
+}
+.home-img {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  width: 45%;
+  height: 90%;
+  transition: 2s ease-in-out;
+}
+.home-img:hover {
+  background: var(--bg-color);
+  opacity: 0.68;
 }
 .home-content {
   display: flex;
@@ -69,9 +85,104 @@ nav a:hover {
   position: relative;
   width: 32.8rem;
 }
-.home-content .text-animate h2 {
+.home-content .text-animate h1 {
   font-size: 3.2rem;
   font-weight: 900;
   color: transparent;
   -webkit-text-stroke: 0.2px var(--main-color);
+}
+.content-bio {
+  width: 37.2rem;
+  font-size: 1.1rem;
+}
+.btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 18.2rem;
+}
+.btn-box .button-box {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  background: var(--main-color);
+  border: 2px solid #00abf0;
+  font-size: 1.1rem;
+  color: var(--bg-color);
+  transition: 0.6s;
+  z-index: 1;
+}
+.btn-box .button-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+  z-index: -1;
+  transition: 0.6s;
+}
+.btn-box .button-box:hover {
+  color: var(--main-color);
+}
+.btn-box .button-box:nth-child(2) {
+  background: transparent;
+  color: var(--main-color);
+}
+.btn-box .button-box:nth-child(2):hover {
+  color: var(--bg-color);
+}
+.btn-box .button-box:nth-child(2)::before {
+  background: var(--main-color);
+}
+.btn-box .button-box:hover::before {
+  width: 100%;
+  color: #00abf0;
+}
+.home-sci {
+  position: absolute;
+  bottom: 4rem;
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  padding: 2px;
+  border: 3px solid var(--main-color);
+  border-radius: 50px;
+  transition: 0.5s;
+  font-size: 28px;
+  color: var(--main-color);
+  z-index: 1;
+  overflow: hidden;
+}
+.home-sci .link-icon:hover {
+  color: var(--bg-color);
+}
+
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.home-sci .link-icon:hover::before {
+  width: 100%;
+  background: var(--main-color);
 }
