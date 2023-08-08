@@ -51,10 +51,13 @@ nav a:hover {
     transform: translateX(0);
   }
 }
+.header {
+  background: var(--second-bg-color);
+}
 .home {
   display: flex;
   align-items: center;
-  background: url("/public/IMG_E2003_1__1__1__1_-removebg.png") no-repeat;
+  background: url("/IMG_E2003_1__1__1__1_-removebg.png") no-repeat;
   background-size: 63rem;
   background-position: right;
   padding: 0 3%;
@@ -185,4 +188,38 @@ nav a:hover {
 .home-sci .link-icon:hover::before {
   width: 100%;
   background: var(--main-color);
+}
+
+.about {
+  padding: 0 9% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--second-bg-color);
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 6rem;
+}
+.heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.heading span {
+  color: var(--main-color);
+}
+.about-img {
+  position: relative;
+  width: 23rem;
+  height: 23rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-img img {
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }

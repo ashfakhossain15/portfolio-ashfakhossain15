@@ -1,25 +1,27 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
-    <div className="flex items-center  justify-between py-6 px-28 fixed top-0 w-full ">
-      <h2 className="text-4xl z-50 name font-primary tracking-wider font-semibold">
+    <div className="flex header items-center z-50 sticky top-0 justify-between py-6 px-28  w-full ">
+      <h2 className="text-4xl  name font-primary tracking-wider font-semibold">
         .ashfak
       </h2>
       <nav className="space-x-8 pr-4">
-        <a className="text-lg " href="#">
+        <Link className="text-lg " to="/">
           Home
-        </a>
-        <a className="text-lg" href="#">
+        </Link>
+        <Link className="text-lg" to="/about">
           About
-        </a>
-        <a className="text-lg" href="#">
+        </Link>
+        <Link className="text-lg" to="/education">
           Education
-        </a>
-        <a className="text-lg" href="#">
+        </Link>
+        <Link className="text-lg" to="/skills">
           Skills
-        </a>
-        <a className="text-lg" href="/contact">
+        </Link>
+        <Link className="text-lg" to="/contact">
           Contact
-        </a>
+        </Link>
       </nav>
     </div>
   );
