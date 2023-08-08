@@ -210,8 +210,8 @@ nav a:hover {
 }
 .about-img {
   position: relative;
-  width: 23rem;
-  height: 23rem;
+  width: 19rem;
+  height: 19rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -220,6 +220,34 @@ nav a:hover {
 .about-img img {
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
+  width: 90%;
+}
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
+  transform: translate(-50%, -50%) rotate(0);
   height: 100%;
+  border-radius: 50%;
+  border-left: 0.2rem solid var(--main-color);
+  border-right: 0.2rem solid var(--main-color);
+  border-top: 0.2rem solid var(--second-bg-color);
+  border-bottom: 0.2rem solid var(--second-bg-color);
+}
+.about-content {
+  text-align: center;
+}
+.about-content h2 {
+  font-size: 2.5rem;
+}
+.about-content p {
+  font-size: 1.1rem;
+}
+.btn-box.buttons {
+  display: inline-block;
+  width: 15rem;
+}
+.btn-box.buttons a::before {
+  background: var(--second-bg-color);
 }
