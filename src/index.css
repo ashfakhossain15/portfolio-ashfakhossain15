@@ -51,21 +51,17 @@ nav a:hover {
     transform: translateX(0);
   }
 }
-.header {
-  background: var(--second-bg-color);
-}
+
 .home {
   display: flex;
   align-items: center;
-  background: url("/IMG_E2003_1__1__1__1_-removebg.png") no-repeat;
-  background-size: 63rem;
-  background-position: right;
   padding: 0 3%;
+  min-height: 88vh;
 }
 .home-img {
   position: absolute;
   bottom: 0;
-  right: 0px;
+  right: 60px;
   width: 45%;
   height: 90%;
   transition: 2s ease-in-out;
@@ -76,7 +72,6 @@ nav a:hover {
 }
 .home-content {
   display: flex;
-  min-height: 100vh;
   align-items: center;
   padding: 0 9%;
 }
@@ -92,7 +87,7 @@ nav a:hover {
   font-size: 3.2rem;
   font-weight: 900;
   color: transparent;
-  -webkit-text-stroke: 0.2px var(--main-color);
+  -webkit-text-stroke: 0.6px var(--main-color);
 }
 .content-bio {
   width: 37.2rem;
@@ -198,7 +193,7 @@ nav a:hover {
   background: var(--second-bg-color);
   flex-direction: column;
   gap: 2rem;
-  padding-bottom: 6rem;
+  
 }
 .heading {
   text-align: center;

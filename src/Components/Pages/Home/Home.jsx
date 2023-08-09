@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "./../../Shared/Header/Header";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import BgAnimation from "../../Shared/Animation/BgAnimation";
 const Home = () => {
   return (
     <div>
@@ -22,7 +23,7 @@ const Home = () => {
               seeking growth, I stay updated on the latest industry trends and
               best practices.
             </p>
-            <div className="btn-box  mt-5">
+            <div className="btn-box  ">
               <button className="button-box text-white bg-[#00abf0] px-7 py-3  rounded-md">
                 <Link>Hire me</Link>
               </button>
@@ -51,7 +52,11 @@ const Home = () => {
               <FaLinkedinIn />
             </Link>
           </div>
-          <div className="home-img"></div>
+          <div className="home-img">
+            <div className="absolute  w-full right-0  sm:-right-32 top-50">
+              <BgAnimation />
+            </div>
+          </div>
         </div>
       </section>
     </div>

@@ -13,6 +13,7 @@ const About = () => {
           <img src="/1671526779462-01.jpeg" alt="" />
           <span className="circle-spin"></span>
         </div>
+
         <div className="about-content">
           <h2>Frontend Developer!</h2>
           <p>
