@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Header from "./../../Shared/Header/Header";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import BgAnimation from "../../Shared/Animation/BgAnimation";
+import About from "../About/About";
+import Education from "../Education/Education";
 const Home = () => {
   return (
     <div>
@@ -53,11 +55,17 @@ const Home = () => {
             </Link>
           </div>
           <div className="home-img">
-            <div className="absolute  w-full right-0  sm:-right-32 top-50">
+            <div className="absolute w-full right-0  sm:-right-32 top-50">
               <BgAnimation />
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <About />
+      </section>
+      <section>
+        <Education />
       </section>
     </div>
   );

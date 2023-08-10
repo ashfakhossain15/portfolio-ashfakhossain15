@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex items-center z-50  justify-between py-6 px-28  w-full ">
+    <div className="flex items-center z-50 sticky top-0   justify-between py-6 px-28  w-full ">
       <h2 className="text-4xl  name font-primary tracking-wider font-semibold">
         .ashfak
       </h2>

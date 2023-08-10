@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-import Header from "../../Shared/Header/Header";
 
 const About = () => {
   return (
     <div>
-      <Header />
-      <section className="py-10 about">
+      <section className="py-16 about">
         <h1 className="heading">
           About <span>Me</span>
         </h1>
