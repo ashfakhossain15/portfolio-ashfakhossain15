@@ -6,7 +6,7 @@ const Education = () => {
       <h1 className="heading">
         My <span>Journey</span>
       </h1>
-      <div className="education-row">
+      <div className="education-row mt-9.">
         <div className="education-colum">
           <h3 className="title">Education</h3>
           <div className="education-box">

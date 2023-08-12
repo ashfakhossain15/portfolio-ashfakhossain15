@@ -326,3 +326,73 @@ nav a:hover {
   font-size: 1rem;
   padding-top: 0.5rem;
 }
+.skills {
+  padding: 2.5% 9%;
+  min-height: auto;
+  background: var(--second-bg-color);
+}
+.progres h3 span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.skills .skills-row {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.skills-row .skills-colum {
+  flex: 1 1 36rem;
+}
+.skills-colum .title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+}
+.skills-box .skills-content {
+  position: relative;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  padding: 0.5rem 1.5rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.skills-box .skills-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
+  background: var(--bg-color);
+
+  z-index: -1;
+}
+.skills-box .skills-content:hover:before {
+  width: 100%;
+}
+.skills-content .progres {
+  padding: 0.7rem 0;
+}
+.skills-content .progres h3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.skills-content .progres span {
+  color: var(--text-color);
+}
+.skills-content .progres .bar {
+  height: 2rem;
+  border-radius: 0.7rem;
+  border: 0.2rem solid var(--main-color);
+  padding: 0.5rem;
+}
+.skills-content .progres .bar span {
+  display: block;
+  height: 100%;
+  border-radius: 0.2rem;
+  background: var(--main-color);
+}

@@ -4,6 +4,7 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import BgAnimation from "../../Shared/Animation/BgAnimation";
 import About from "../About/About";
 import Education from "../Education/Education";
+import Skills from "../Skills/Skills";
 const Home = () => {
   return (
     <div>
@@ -66,6 +67,9 @@ const Home = () => {
       </section>
       <section>
         <Education />
+      </section>
+      <section>
+        <Skills />
       </section>
     </div>
   );
