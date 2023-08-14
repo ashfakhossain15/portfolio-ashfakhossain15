@@ -16,10 +16,10 @@ const Header = () => {
         <Link className="text-lg" to="/education">
           Education
         </Link>
-        <Link className="text-lg" to="/skills">
+        <Link className="text-lg" to="#skills">
           Skills
         </Link>
-        <Link className="text-lg" to="/contact">
+        <Link className="text-lg" to="#contact">
           Contact
         </Link>
       </nav>

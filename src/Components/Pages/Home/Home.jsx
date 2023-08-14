@@ -5,6 +5,7 @@ import BgAnimation from "../../Shared/Animation/BgAnimation";
 import About from "../About/About";
 import Education from "../Education/Education";
 import Skills from "../Skills/Skills";
+import Contact from "../Contact/Contact";
 const Home = () => {
   return (
     <div>
@@ -26,7 +27,7 @@ const Home = () => {
               seeking growth, I stay updated on the latest industry trends and
               best practices.
             </p>
-            <div className="btn-box  ">
+            <div className="btn-box">
               <button className="button-box text-white bg-[#00abf0] px-7 py-3  rounded-md">
                 <Link>Hire me</Link>
               </button>
@@ -70,6 +71,9 @@ const Home = () => {
       </section>
       <section>
         <Skills />
+      </section>
+      <section>
+        <Contact />
       </section>
     </div>
   );

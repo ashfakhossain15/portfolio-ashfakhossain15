@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <div>
-      <section className="skills" id="skills">
+      <section className="skills " id="skills">
         <h2 className="heading">
           My <span>Skills</span>
         </h2>
