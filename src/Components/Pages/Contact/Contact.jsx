@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <div>
-      <section className="contact" id="contact">
+      <section className="contact " id="contact">
         <h2 className="heading">
           Contact <span>Me!</span>
         </h2>
@@ -37,6 +37,7 @@ const Contact = () => {
               cols="30"
               rows="10"
               placeholder="Your Message"
+              className="text-xl"
               required
             ></textarea>
             <span className="focus"></span>

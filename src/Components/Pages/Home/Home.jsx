@@ -6,9 +6,10 @@ import About from "../About/About";
 import Education from "../Education/Education";
 import Skills from "../Skills/Skills";
 import Contact from "../Contact/Contact";
+import Footer from "../../Shared/Footer/Footer";
 const Home = () => {
   return (
-    <div>
+    <div className="bg-[--bg-color] ">
       <Header />
       <section className="home">
         <div className=" home-content">
@@ -72,9 +73,10 @@ const Home = () => {
       <section>
         <Skills />
       </section>
-      <section>
+      <section className="">
         <Contact />
       </section>
+      <Footer />
     </div>
   );
 };
