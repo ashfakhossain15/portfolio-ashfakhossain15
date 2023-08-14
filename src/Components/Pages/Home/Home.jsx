@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <div className="bg-[--bg-color] ">
       <Header />
-      <section className="home">
+      <section className="home h-[100vh]" id="home">
         <div className=" home-content">
           <div>
-            <h1 className="text-6xl home-name  ">
+            <h1 className="  lg:text-5xl xl:text-6xl  home-name  ">
               Hi I'm <span className="text-[#00abf0]">Ashfak Hossain</span>
             </h1>
             <div className="text-animate">
@@ -64,16 +64,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section id="about">
         <About />
       </section>
-      <section>
+      <section id="education">
         <Education />
       </section>
-      <section>
+      <section id="skills">
         <Skills />
       </section>
-      <section className="">
+      <section id="contact">
         <Contact />
       </section>
       <Footer />

@@ -10,7 +10,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="footer-iconTop ">
-        <Link className="px-4 text-xl py-4 hover:bg-[--bg-color] z-10 hover:text-[--main-color]  duration-500 transition-all "><FaArrowUp/></Link>
+        <a href='#home' className="px-3 text-xl py-3 hover:bg-[--bg-color] z-10 hover:text-[--main-color]  duration-500 transition-all "><FaArrowUp/></a>
       </div>
     </footer>
   );

@@ -35,9 +35,12 @@ nav a {
   font-weight: 500;
   transition: 0.2s ease-in-out;
 }
+
+nav a .active,
 nav a:hover {
   color: #00abf0;
 }
+
 .name {
   animation: name 0.9s cubic-bezier(0.19, -0.27, 0.18, 1.97);
 }
@@ -52,11 +55,15 @@ nav a:hover {
   }
 }
 
+.header.sticky {
+  background: var(--bg-color);
+}
+
 .home {
   display: flex;
   align-items: center;
   padding: 2% 1%;
-  min-height: 89vh;
+  min-height: 95vh;
   overflow: hidden;
 }
 .home-img {
@@ -74,6 +81,7 @@ nav a:hover {
 .home-content {
   display: flex;
   align-items: center;
+  justify-content: left;
   padding: 0 9%;
 }
 .home-name {
@@ -416,7 +424,7 @@ nav a:hover {
   left: 0;
   width: 0;
   height: 100%;
-  background:var(--second-bg-color);
+  background: var(--second-bg-color);
   transition: 0.5s ease;
   border-radius: 0.6rem;
   z-index: -1;
