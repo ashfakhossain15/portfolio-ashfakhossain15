@@ -9,7 +9,7 @@ const Skills = () => {
           <div className="skills-colum">
             <h3 className="title">Coding Skills</h3>
             <div className="skills-box">
-              <div className="skills-content ">
+              <div className="skills-content">
                 <div className="progres">
                   <h3>
                     HTML <span>95%</span>
