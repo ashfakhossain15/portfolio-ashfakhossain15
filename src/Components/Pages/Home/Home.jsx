@@ -11,17 +11,17 @@ const Home = () => {
   return (
     <div className="bg-[--bg-color] ">
       <Header />
-      <section className="home h-[100vh]" id="home">
+      <section className="home lg:h-[100vh]" id="home">
         <div className=" home-content">
           <div>
-            <h1 className=" text-[42px] md:text-5xl lg:text-6xl xl:text-6xl  home-name  ">
+            <h1 className="text-[25px] sm:text-[38px]  md:text-5xl lg:text-6xl xl:text-6xl home-name ">
               Hi I'm <span className="text-[#00abf0]">Ashfak Hossain</span>
             </h1>
             <div className="text-animate ">
               <h1 className="text-[42px] md:text-5xl lg:text-6xl xl:text-6xl">
                 FontEnd Developer
               </h1>
-            </div>{" "}
+            </div>
             <p className="py-6 content-bio mr-5">
               I am a skilled and passionate Front-End Developer, harnessing the
               power of code and design to create captivating user experiences.
@@ -39,7 +39,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="home-sci ">
+          <div className="home-sci">
             <Link
               to={"https://web.facebook.com/ashfakhossain175"}
               className="link-icon"
