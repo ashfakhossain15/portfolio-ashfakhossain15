@@ -11,7 +11,7 @@ const Home = () => {
         </h1>
         <div className="text-animate ">
           <h1 className="text-[42px] md:text-5xl lg:text-6xl xl:text-6xl">
-            FontEnd Developer
+            FrontEnd Developer
           </h1>
         </div>
         <p className="py-6 content-bio mr-5">

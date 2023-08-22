@@ -24,8 +24,8 @@ const About = () => {
             growth and improvement.
           </p>
           <div className="btn-box buttons">
-            <Link className="button-box  my-4 px-5 py-2">
-              <button>Read More</button>
+            <Link className="button-box  my-6 px-5 py-2">
+              <button className="font-light">Read More</button>
             </Link>
           </div>
         </div>
