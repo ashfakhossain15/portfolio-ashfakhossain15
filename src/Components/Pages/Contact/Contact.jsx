@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <div>
-      <section className="contact " id="contact">
+      <div className="contact " id="contact">
         <h2 className="heading">
           Contact <span>Me!</span>
         </h2>
@@ -32,7 +32,7 @@ const Contact = () => {
           </div>
           <div className="textarea-field">
             <textarea
-              name="message"   
+              name="message"
               id=""
               cols="30"
               rows="10"
@@ -48,7 +48,7 @@ const Contact = () => {
             </Link>
           </div>
         </form>
-      </section>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <div>
-      <section className="skills " id="skills">
+      <div className="skills " id="skills">
         <h2 className="heading">
           My <span>Skills</span>
         </h2>
@@ -71,7 +71,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
