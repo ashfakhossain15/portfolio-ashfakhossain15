@@ -13,7 +13,7 @@ const Main = () => {
   const handleScroll = () => {
     const sections = document.querySelectorAll("section"); // Assuming you're using <section> tags for sections
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
+      const sectionTop = section.offsetTop - 150;
       const sectionHeight = section.clientHeight;
       if (
         window.scrollY >= sectionTop &&
@@ -35,19 +35,44 @@ const Main = () => {
     <div className="main-content">
       <div className="bg-[--bg-color] ">
         <Header {...{ activeSection }} />
-        <section className={`home lg:h-[100vh] ${activeSection === 'home' ? 'show-animation':''}`} id="home">
+        <section
+          className={`home ${
+            activeSection != "home" ? "show-animation" : ""
+          } h-[100vh] ${activeSection === "home" ? "show-animation" : ""}`}
+          id="home"
+        >
           <Home />
         </section>
-        <section className={`about  ${activeSection === 'about' ? 'show-animation':''}`} id="about">
+        <section
+          className={`about  ${
+            activeSection === "about" ? "show-animation" : ""
+          }`}
+          id="about"
+        >
           <About />
         </section>
-        <section className={`education  ${activeSection === 'education' ? 'show-animation':''}`}  id="education">
+        <section
+          className={`education  ${
+            activeSection === "education" ? "show-animation" : ""
+          }`}
+          id="education"
+        >
           <Education />
         </section>
-        <section className={`skills  ${activeSection === 'skills' ? 'show-animation':''}`}  id="skills">
+        <section
+          className={`skills  ${
+            activeSection === "skills" ? "show-animation" : ""
+          }`}
+          id="skills"
+        >
           <Skills />
         </section>
-        <section className={`contact  ${activeSection === 'contact' ? 'show-animation':''}`}  id="contact">
+        <section
+          className={`contact  ${
+            activeSection === "contact" ? "show-animation" : ""
+          }`}
+          id="contact"
+        >
           <Contact />
         </section>
         <Footer />

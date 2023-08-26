@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const navLinks = [
   {
@@ -31,7 +30,6 @@ const Header = (props) => {
       <a href="#home">
         <h2 className="text-4xl name relative font-primary tracking-wider font-semibold">
           .ashfak
-          <span className="animate absolute" style={{ "--i": "1" }}></span>
         </h2>
       </a>
       <div className="block relative navIcon  md:hidden">

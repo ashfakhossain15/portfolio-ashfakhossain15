@@ -167,6 +167,20 @@ nav a:hover {
   width: 100%;
   color: #00abf0;
 }
+.button-animate {
+  opacity: 0;
+  z-index: 10;
+
+  animation: buttonLeft 0.7s ease-out forwards;
+  animation-delay: 2.3s;
+}
+.button-animate:nth-child(2) {
+  opacity: 0;
+  z-index: 10;
+  animation: buttonRight 0.6s ease-out forwards;
+  animation-delay: 2.3s;
+}
+
 .home-sci {
   position: absolute;
   bottom: 4rem;
@@ -192,6 +206,24 @@ nav a:hover {
 }
 .home-sci .link-icon:hover {
   color: var(--bg-color);
+}
+.link-icon {
+  opacity: 0;
+  z-index: 10;
+  animation: linkButton 0.6s cubic-bezier(0.19, -0.27, 0.18, 1.97) forwards;
+  animation-delay: 2.7s;
+}
+.link-icon:nth-child(2) {
+  opacity: 0;
+  z-index: 10;
+  animation: linkButton 0.6s cubic-bezier(0.19, -0.27, 0.18, 1.97) forwards;
+  animation-delay: 2.8s;
+}
+.link-icon:nth-child(3) {
+  opacity: 0;
+  z-index: 10;
+  animation: linkButton 0.6s cubic-bezier(0.19, -0.27, 0.18, 1.97) forwards;
+  animation-delay: 2.9s;
 }
 
 .home-sci a::before {
@@ -371,7 +403,6 @@ nav a:hover {
 }
 .skills-row .skills-colum {
   flex: 1 1 34rem;
-
 }
 .skills-colum .title {
   font-size: 2.5rem;
@@ -426,7 +457,7 @@ nav a:hover {
   background: var(--main-color);
 }
 .contact {
-  padding: 4% 9%;
+  padding: 2% 9%;
   min-height: auto;
   padding-bottom: 2rem;
 }
@@ -505,15 +536,47 @@ nav a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background:var(--main-color);
+  background: var(--main-color);
   z-index: 98;
 }
-.name .animate,
+
 .nav .animate,
-.navIcon .animate {
+.navIcon .animate,
+.home.show-animation .animate {
   animation: showRight 1s ease forwards;
   animation-delay: calc(0.4s * var(--i));
 }
+@keyframes buttonLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateX(0);
+  }
+}
+@keyframes buttonRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateX(0);
+  }
+}
+@keyframes linkButton {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Breakpoint */
 
 @media (max-width: 1200px) {
@@ -603,7 +666,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     padding: 0;
-    min-height: 90vh;
+    min-height: 100vh;
   }
   .education {
     padding: 2% 3%;
@@ -623,11 +686,7 @@ nav a:hover {
     font-size: 1rem;
     margin-bottom: 0.3rem;
   }
-  .skills-colum .title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin: 2rem 0 2rem;
-  }
+
   .contact form {
     padding: 2% 0%;
     margin-bottom: 1rem;
