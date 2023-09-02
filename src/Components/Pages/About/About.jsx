@@ -4,16 +4,20 @@ const About = () => {
   return (
     <div>
       <div className="py-16 about">
-        <h1 className="heading">
+        <h1 className="heading w-96 mx-auto relative">
           About <span>Me</span>
+          <span
+            className="animate about-head absolute "
+            style={{ "--i": "1" }}
+          ></span>
         </h1>
-        <div className="flex flex-col  md:grid md:grid-cols-2 items-center md:justify-around  px-10 md:px-24 mt-8">
-          <div className="about-img  md:ml-16 ">
+        <div className="flex flex-col  md:grid md:grid-cols-2 items-center md:justify-around  px-10 md:px-8 lg:px-16 mt-8">
+          <div className="about-img  md:ml-5 lg:ml-14 ">
             <img src="/1671526779462-01.jpeg" alt="" />
             <span className="circle-spin"></span>
           </div>
 
-          <div className="about-content space-y-8  text-center md:text-left mt-8">
+          <div className="about-content space-y-8 text-center md:text-left mt-8">
             <h2 className=" mb-4">Frontend Developer!</h2>
             <p className="text-base ">
               I am a Front-End Developer with a passion for creating captivating
@@ -25,8 +29,8 @@ const About = () => {
               continuous growth and improvement.
             </p>
             <div className="btn-box buttons ">
-              <Link className="button-box  my-6 px-5 py-2">
-                <button className="font-semibold">Read More</button>
+              <Link className="button-box  my-6 px-5 py-4">
+                <button className="font-light">Read More</button>
               </Link>
             </div>
           </div>

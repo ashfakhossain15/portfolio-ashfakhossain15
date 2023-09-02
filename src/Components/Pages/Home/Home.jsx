@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import BgAnimation from "../../Shared/Animation/BgAnimation";
+import { animate } from "framer-motion";
 
 const Home = () => {
   return (
@@ -13,7 +14,6 @@ const Home = () => {
         <div className="text-animate ">
           <h1 className="text-[42px] md:text-5xl lg:text-6xl xl:text-6xl">
             FrontEnd Developer
- 
           </h1>
           <span className="animate absolute" style={{ "--i": "3" }}></span>
         </div>
@@ -25,10 +25,11 @@ const Home = () => {
           growth, I stay updated on the latest industry trends and best
           practices.
           <span className="animate absolute" style={{ "--i": "4" }}></span>
-
         </p>
         <div className="btn-box">
-          <button className="button-box button-animate text-white bg-[#00abf0] px-7 py-3  rounded-md">
+          <button
+            className={`button-box button-animate text-white bg-[#00abf0] px-7 py-3  rounded-md`}
+          >
             <Link>Hire me</Link>
           </button>
           <button className="button-box button-animate text-white bg-[#00abf0] px-7 py-3 ">

@@ -9,11 +9,12 @@ import { useState, useEffect } from "react";
 
 const Main = () => {
   const [activeSection, setActiveSection] = useState("");
+  const [addClass, setAddClass] = useState(true);
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section"); // Assuming you're using <section> tags for sections
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 150;
+      const sectionTop = section.offsetTop - 190;
       const sectionHeight = section.clientHeight;
       if (
         window.scrollY >= sectionTop &&
@@ -31,14 +32,29 @@ const Main = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 5) {
+        setAddClass(false);
+      } else {
+        setAddClass(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="main-content">
       <div className="bg-[--bg-color] ">
         <Header {...{ activeSection }} />
         <section
-          className={`home ${
-            activeSection != "home" ? "show-animation" : ""
-          } h-[100vh] ${activeSection === "home" ? "show-animation" : ""}`}
+          className={`home  h-[100vh] ${addClass ? "show-animation" : ""} ${
+            activeSection === "home" ? "show-animation" : ""
+          }`}
           id="home"
         >
           <Home />
