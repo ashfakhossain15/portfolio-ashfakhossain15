@@ -3,13 +3,23 @@ import { FaCalendarAlt } from "react-icons/fa";
 const Education = () => {
   return (
     <div className="education">
-      <h1 className="heading">
+      <h1 className="heading relative">
         My <span>Journey</span>
+        <span
+          className="animate about-head absolute "
+          style={{ "--i": "1" }}
+        ></span>
       </h1>
       <div className="education-row mt-9.">
         <div className="education-colum">
-          <h3 className="title">Education</h3>
-          <div className="education-box">
+          <h3 className="title relative">
+            Education{" "}
+            <span
+              className="animate about-head absolute "
+              style={{ "--i": "2" }}
+            ></span>
+          </h3>
+          <div className="education-box relative">
             <div className="education-content">
               <div className="content">
                 <div className="year">
@@ -44,11 +54,21 @@ const Education = () => {
                 </p>
               </div>
             </div>
+            <span
+              className="animate about-head absolute "
+              style={{ "--i": "3" }}
+            ></span>
           </div>
         </div>
         <div className="education-colum">
-          <h3 className="title">Experience</h3>
-          <div className="education-box">
+          <h3 className="title relative">
+            Experience{" "}
+            <span
+              className="animate about-head absolute "
+              style={{ "--i": "4" }}
+            ></span>
+          </h3>
+          <div className="education-box relative">
             <div className="education-content">
               <div className="content">
                 <div className="year">
@@ -71,6 +91,10 @@ const Education = () => {
                 <p>No Experience In this Section .</p>
               </div>
             </div>
+            <span
+              className="animate about-head absolute "
+              style={{ "--i": "5" }}
+            ></span>
           </div>
         </div>
       </div>

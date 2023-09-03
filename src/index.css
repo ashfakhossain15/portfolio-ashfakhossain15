@@ -89,6 +89,8 @@ nav a:hover {
   -webkit-background-clip: text;
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+.home.show-animation .home-content .text-animate h1 {
   animation: homeBgText 6s linear infinite;
   animation-delay: 2s;
 }
@@ -100,9 +102,12 @@ nav a:hover {
   width: 0;
   height: 110%;
   border-right: 0.3rem solid var(--main-color);
+
+  z-index: 1;
+}
+.home.show-animation .home-content .text-animate h1::before {
   animation: homeCursorText 6s linear infinite;
   animation-delay: 2s;
-  z-index: 1;
 }
 
 .content-bio {
@@ -526,19 +531,29 @@ nav a:hover {
 
 .nav .animate,
 .navIcon .animate,
-.home.show-animation .animate { background: var(--bg-color);
+.home.show-animation .animate {
+  background: var(--bg-color);
   animation: showRight 1s ease forwards;
   animation-delay: calc(0.4s * var(--i));
 }
 
-.animate.about-head{
-  background: var(--main-color);
+.animate.about-head {
+  background: var(--bg-color);
   transition: 1s ease;
   transition-delay: calc(0.4s / var(--i));
   animation: none;
-
 }
-.about.show-animation .animate.about-head {
+section:nth-child(odd) .animate.about-head {
+  background-color: var(--second-bg-color);
+}
+.education .education-box .animate.about-head {
+  width: 105%;
+}
+
+.about.show-animation .animate.about-head,
+.education.show-animation .animate.about-head,
+.skills.show-animation .animate.about-head,
+.contact.show-animation .animate.about-head {
   transition-delay: calc(0.4s * var(--i));
   width: 0;
 }

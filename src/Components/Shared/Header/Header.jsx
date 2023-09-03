@@ -51,6 +51,7 @@ const Header = (props) => {
               }`}
               style={{ transitionDelay: `${(index + 1) * 100}ms` }}
               href={item.to}
+              onClick={handleMenu}
             >
               {item.name}
             </a>
@@ -66,6 +67,7 @@ const Header = (props) => {
                 props.activeSection === item.name.toLowerCase() ? "active" : ""
               }`}
               href={item.to}
+              onClick={handleMenu}
             >
               {item.name}
             </a>
@@ -80,9 +82,7 @@ const Header = (props) => {
           <a
             key={item.name}
             className={`text-lg ${
-              props.activeSection === item.name.toLowerCase()
-                ? "active"
-                : ""
+              props.activeSection === item.name.toLowerCase() ? "active" : ""
             }`}
             href={item.to}
           >

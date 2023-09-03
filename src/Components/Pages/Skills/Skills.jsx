@@ -2,13 +2,23 @@ const Skills = () => {
   return (
     <div>
       <div className="skills " id="skills">
-        <h2 className="heading">
+        <h2 className="heading relative ">
           My <span>Skills</span>
+          <span
+            className="animate about-head absolute "
+            style={{ "--i": "1" }}
+          ></span>
         </h2>
         <div className="skills-row">
           <div className="skills-colum">
-            <h3 className="title">Coding Skills</h3>
-            <div className="skills-box">
+            <h3 className="title relative">
+              Coding Skills{" "}
+              <span
+                className="animate about-head absolute "
+                style={{ "--i": "2" }}
+              ></span>
+            </h3>
+            <div className="skills-box relative">
               <div className="skills-content">
                 <div className="progres">
                   <h3>
@@ -36,11 +46,21 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
+              <span
+                className="animate about-head absolute "
+                style={{ "--i": "3" }}
+              ></span>
             </div>
           </div>
           <div className="skills-colum">
-            <h3 className="title">Professional Skills</h3>
-            <div className="skills-box">
+            <h3 className="title relative">
+              Professional Skills{" "}
+              <span
+                className="animate about-head absolute "
+                style={{ "--i": "5" }}
+              ></span>
+            </h3>
+            <div className="skills-box relative">
               <div className="skills-content">
                 <div className="progres">
                   <h3>
@@ -68,6 +88,10 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
+              <span
+                className="animate about-head absolute "
+                style={{ "--i": "6" }}
+              ></span>
             </div>
           </div>
         </div>
