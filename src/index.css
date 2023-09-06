@@ -534,13 +534,13 @@ nav a:hover {
 .home.show-animation .animate {
   background: var(--bg-color);
   animation: showRight 1s ease forwards;
-  animation-delay: calc(0.4s * var(--i));
+  animation-delay: calc(0.3s * var(--i));
 }
 
 .animate.about-head {
   background: var(--bg-color);
   transition: 1s ease;
-  transition-delay: calc(0.4s / var(--i));
+  transition-delay: calc(0.3s / var(--i));
   animation: none;
 }
 section:nth-child(odd) .animate.about-head {

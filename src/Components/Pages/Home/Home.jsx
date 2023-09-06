@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import BgAnimation from "../../Shared/Animation/BgAnimation";
-import { animate } from "framer-motion";
 
 const Home = () => {
   return (
     <div className=" home-content">
       <div>
-        <h1 className="text-[25px] relative sm:text-[38px]  md:text-5xl lg:text-6xl xl:text-6xl home-name ">
+        <h1 className="text-[27px] relative sm:text-[38px]  md:text-5xl lg:text-6xl xl:text-6xl home-name ">
           Hi I'm , <span className="text-[#00abf0]">Ashfak Hossain</span>
           <span className="animate absolute" style={{ "--i": "2" }}></span>
         </h1>
-        <div className="text-animate ">
-          <h1 className="text-[42px] md:text-5xl lg:text-6xl xl:text-6xl">
+        <div className="text-animate relative ">
+          <h1 className=" text-[30px] md:text-5xl lg:text-6xl xl:text-6xl ">
             FrontEnd Developer
           </h1>
+
           <span className="animate absolute" style={{ "--i": "3" }}></span>
         </div>
         <p className="py-6 relative content-bio mr-5">
@@ -27,14 +27,17 @@ const Home = () => {
           <span className="animate absolute" style={{ "--i": "4" }}></span>
         </p>
         <div className="btn-box">
-          <button
-            className={`button-box button-animate text-white bg-[#00abf0] px-7 py-3  rounded-md`}
+          <Link
+            to={'mailto:ashfaksikder15@gmail.com'} className={`button-box button-animate text-white bg-[#00abf0] px-7 py-3  rounded-md`}
           >
-            <Link>Hire me</Link>
-          </button>
-          <button className="button-box button-animate text-white bg-[#00abf0] px-7 py-3 ">
-            <Link>Lets Talk</Link>
-          </button>
+            Hire me
+          </Link>
+          <Link
+            to={"mailto:ashfaksikder15@gmail.com"}
+            className="button-box button-animate text-white bg-[#00abf0] px-7 py-3 "
+          >
+            Lets Talk
+          </Link>
         </div>
       </div>
       <div className="home-sci">
