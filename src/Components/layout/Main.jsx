@@ -8,11 +8,10 @@ import Footer from "../Shared/Footer/Footer";
 import { useState, useEffect } from "react";
 
 const Main = () => {
-  const [activeSection, setActiveSection] = useState("");
-  const [addClass, setAddClass] = useState(true);
+  const [activeSection, setActiveSection] = useState("home");
 
   const handleScroll = () => {
-    const sections = document.querySelectorAll("section"); // Assuming you're using <section> tags for sections
+    const sections = document.querySelectorAll("section");
     sections.forEach((section) => {
       const sectionTop = section.offsetTop - 190;
       const sectionHeight = section.clientHeight;
@@ -26,21 +25,14 @@ const Main = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    if (activeSection) {
+      document
+        .querySelector(`#${activeSection}`)
+        .classList.add("show-animation");
+    }
+  }, [activeSection]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 5) {
-        setAddClass(false);
-      } else {
-        setAddClass(true);
-      }
-    };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -51,44 +43,19 @@ const Main = () => {
     <div className="main-content">
       <div className="bg-[--bg-color] ">
         <Header {...{ activeSection }} />
-        <section
-          className={`home  h-[100vh] ${addClass ? "show-animation" : ""} ${
-            activeSection === "home" ? "show-animation" : ""
-          }`}
-          id="home"
-        >
+        <section className={`home h-[100vh]`} id="home">
           <Home />
         </section>
-        <section
-          className={`about  ${
-            activeSection === "about" ? "show-animation" : ""
-          }`}
-          id="about"
-        >
+        <section className={`about`} id="about">
           <About />
         </section>
-        <section
-          className={`education  ${
-            activeSection === "education" ? "show-animation" : ""
-          }`}
-          id="education"
-        >
+        <section className={`education`} id="education">
           <Education />
         </section>
-        <section
-          className={`skills  ${
-            activeSection === "skills" ? "show-animation" : ""
-          }`}
-          id="skills"
-        >
+        <section className={`skills`} id="skills">
           <Skills />
         </section>
-        <section
-          className={`contact  ${
-            activeSection === "contact" ? "show-animation" : ""
-          }`}
-          id="contact"
-        >
+        <section className={`contact`} id="contact">
           <Contact />
         </section>
         <Footer />

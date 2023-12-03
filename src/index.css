@@ -280,8 +280,7 @@ nav a:hover {
   border-bottom: 0.2rem solid var(--second-bg-color);
   animation: aboutSpinner 8s linear infinite;
 }
-.about-content {
-}
+
 .about-content h2 {
   font-size: 2.5rem;
 }
@@ -534,7 +533,7 @@ nav a:hover {
 .home.show-animation .animate {
   background: var(--bg-color);
   animation: showRight 1s ease forwards;
-  animation-delay: calc(0.3s * var(--i));
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .animate.about-head {
@@ -554,7 +553,7 @@ section:nth-child(odd) .animate.about-head {
 .education.show-animation .animate.about-head,
 .skills.show-animation .animate.about-head,
 .contact.show-animation .animate.about-head {
-  transition-delay: calc(0.4s * var(--i));
+  transition-delay: calc(0.2s * var(--i));
   width: 0;
 }
 @keyframes buttonLeft {

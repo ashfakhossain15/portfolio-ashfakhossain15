@@ -8,7 +8,7 @@ const Footer = () => {
           Copyright &copy; 2023 by Codehal | All Rights Reserved.
         </p>
       </div>
-      <div className="footer-iconTop ">
+      <div className="footer-iconTop">
         <a
           href="#home"
           className="px-3 text-xl py-3 hover:bg-[--bg-color] z-10 hover:text-[--main-color]  duration-500 transition-all "
