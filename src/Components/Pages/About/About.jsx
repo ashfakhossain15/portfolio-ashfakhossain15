@@ -43,6 +43,7 @@ const About = () => {
               ></span>{" "}
             </p>
             <div className="btn-box buttons relative ">
+              
               <Link className="button-box  my-6 px-5 py-4">
                 <button className="font-light">Read More </button>
               </Link>
