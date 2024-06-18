@@ -11,7 +11,7 @@ const About = () => {
             style={{ "--i": "1" }}
           ></span>
         </h1>
-        <div className="flex flex-col  md:grid md:grid-cols-2 items-center md:justify-around  px-10 md:px-8 lg:px-16 mt-8">
+        <div className="flex flex-col  md:grid md:grid-cols-2 items-center md:justify-around  px-8 md:px-8 lg:px-16 mt-8">
           <div className="about-img relative md:ml-5 lg:ml-14 ">
             <img src="/1671526779462-01.jpeg" alt="" />
             <span className="circle-spin"></span>
@@ -43,14 +43,13 @@ const About = () => {
               ></span>{" "}
             </p>
             <div className="btn-box buttons relative ">
-              
               <Link className="button-box  my-6 px-5 py-4">
                 <button className="font-light">Read More </button>
               </Link>
               <span
-            className="animate about-head absolute "
-            style={{ "--i": "5" }}
-          ></span>
+                className="animate about-head absolute "
+                style={{ "--i": "5" }}
+              ></span>
             </div>
           </div>
         </div>

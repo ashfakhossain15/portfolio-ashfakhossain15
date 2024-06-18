@@ -101,7 +101,6 @@ nav a:hover {
   z-index: 1;
 }
 
-
 .content-bio {
   width: 37.2rem;
   font-size: 1.1rem;
@@ -246,8 +245,8 @@ nav a:hover {
 }
 .about-img {
   position: relative;
-  width: 25rem;
-  height: 25rem;
+  width: 24rem;
+  height: 24rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -255,14 +254,15 @@ nav a:hover {
 }
 .about-img img {
   border: 0.2rem solid var(--main-color);
-  border-radius: 50%;
+  border-radius: 52%;
   width: 90%;
+  height: 90%;
 }
 .about-img .circle-spin {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 99%;
   transform: translate(-50%, -50%) rotate(0);
   height: 100%;
   border-radius: 50%;
