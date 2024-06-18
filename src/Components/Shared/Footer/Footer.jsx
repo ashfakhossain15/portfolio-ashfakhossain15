@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer h-24 flex items-center bg-[--second-bg-color] px-11 justify-between">
       <div className="footer-text">
         <p className=" text-base lg:text-xl">
-          Copyright &copy; 2023 by Codehal | All Rights Reserved.
+          Thanks For Visit My Portfolio | Catch You Later
         </p>
       </div>
       <div className="footer-iconTop">
