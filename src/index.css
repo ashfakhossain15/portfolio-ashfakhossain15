@@ -85,8 +85,6 @@ nav a:hover {
   font-weight: 900;
   color: transparent;
   -webkit-text-stroke: 0.6px var(--main-color);
-  background-image: linear-gradient(var(--main-color)), var(--main-color);
-  -webkit-background-clip: text;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -97,7 +95,6 @@ nav a:hover {
   left: 0;
   width: 0;
   height: 110%;
-
   z-index: 1;
 }
 
@@ -121,7 +118,7 @@ nav a:hover {
   border: 2px solid #00abf0;
   font-size: 1.1rem;
   color: var(--bg-color);
-  transition: 0.6s;
+  transition: 0.4s;
   z-index: 1;
 }
 .btn-box .button-box::before {
@@ -134,7 +131,7 @@ nav a:hover {
   background-color: var(--bg-color);
   border-radius: 0.5rem;
   z-index: -1;
-  transition: 0.6s;
+  transition: 0.4s;
 }
 .btn-box .button-box:hover {
   color: var(--main-color);
@@ -157,13 +154,13 @@ nav a:hover {
   opacity: 0;
   z-index: 10;
   animation: buttonLeft 0.7s ease-out forwards;
-  animation-delay: 2.3s;
+  animation-delay: 2s;
 }
 .button-animate:nth-child(2) {
   opacity: 0;
   z-index: 10;
   animation: buttonRight 0.6s ease-out forwards;
-  animation-delay: 2.3s;
+  animation-delay: 2s;
 }
 
 .home-sci {
@@ -173,6 +170,7 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+
 .home-sci a {
   position: relative;
   display: inline-flex;
@@ -192,23 +190,23 @@ nav a:hover {
 .home-sci .link-icon:hover {
   color: var(--bg-color);
 }
-.home.show-animation .link-icon {
+.home-sci .link-icon {
   opacity: 0;
+}
+.home.show-animation .link-icon {
+  z-index: 10;
+  animation: linkButton 0.6s cubic-bezier(0.19, -0.27, 0.18, 1.97) forwards;
+  animation-delay: 2.5s;
+}
+.home.show-animation .link-icon:nth-child(2) {
+  z-index: 10;
+  animation: linkButton 0.6s cubic-bezier(0.19, -0.27, 0.18, 1.97) forwards;
+  animation-delay: 2.6s;
+}
+.home.show-animation .link-icon:nth-child(3) {
   z-index: 10;
   animation: linkButton 0.6s cubic-bezier(0.19, -0.27, 0.18, 1.97) forwards;
   animation-delay: 2.7s;
-}
-.home.show-animation .link-icon:nth-child(2) {
-  opacity: 0;
-  z-index: 10;
-  animation: linkButton 0.6s cubic-bezier(0.19, -0.27, 0.18, 1.97) forwards;
-  animation-delay: 2.8s;
-}
-.home.show-animation .link-icon:nth-child(3) {
-  opacity: 0;
-  z-index: 10;
-  animation: linkButton 0.6s cubic-bezier(0.19, -0.27, 0.18, 1.97) forwards;
-  animation-delay: 2.9s;
 }
 
 .home-sci a::before {
@@ -517,20 +515,19 @@ nav a:hover {
   width: 100%;
   height: 100%;
   background: var(--main-color);
-  z-index: 98;
+  z-index: 5;
 }
-
 .nav .animate,
 .navIcon .animate,
 .home.show-animation .animate {
   background: var(--bg-color);
-  animation: showRight 1s ease forwards;
+  animation: showRight 0.7s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
 
 .animate.about-head {
   background: var(--bg-color);
-  transition: 1s ease;
+  transition: 0.7s ease;
   transition-delay: calc(0.2s / var(--i));
   animation: none;
 }
